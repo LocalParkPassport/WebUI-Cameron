@@ -9,17 +9,17 @@
 
 // Button Style
 
-.button() {
+.button(@color, @backGround) {
     padding: 20px;
     // border-radius: 1rem;
-    color: @darkGreen;
-    background: @lightPeach;
+    color: @color;
+    background: @backGround;
     transition: 500ms;
     border: none;
     outline: none;
     &:hover {
-        color: @lightPeach;
-        background: @darkGreen;
+        color: @backGround;
+        background: @color;
     }
 }
 

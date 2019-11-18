@@ -7,11 +7,11 @@
         background: @lightPeach;
 
         .nav_left {
-            .flex(row wrap, space-between, center);
+            .flex(row wrap, flex-start, center);
             width: 40%;
 
             a button {
-                .button();
+                .button(@darkGreen, @lightPeach);
             }
         }
         .nav_center {
@@ -23,7 +23,7 @@
             width: 40%;
 
             a button {
-                .button();
+                .button(@darkGreen, @lightPeach);
             }
         }
     }
