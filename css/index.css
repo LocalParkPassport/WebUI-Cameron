@@ -3,7 +3,7 @@ input[type=text] {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1.6rem;
   background-color: white;
   background-image: url('../img/search.png');
   background-size: contain;
@@ -161,6 +161,7 @@ h3,
 h4,
 h5 {
   font-family: 'Playfair Display', serif;
+  line-height: 2;
 }
 h1 {
   font-size: 4rem;
@@ -189,6 +190,7 @@ p {
   transition: 500ms;
   border: none;
   outline: none;
+  font-size: 1.6rem;
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -228,6 +230,7 @@ p {
   transition: 500ms;
   border: none;
   outline: none;
+  font-size: 1.6rem;
 }
 .header_container .navigation .nav_left a button:hover {
   color: #fae8c8;
@@ -259,6 +262,7 @@ p {
   transition: 500ms;
   border: none;
   outline: none;
+  font-size: 1.6rem;
 }
 .header_container .navigation .nav_right a button:hover {
   color: #fae8c8;
@@ -302,6 +306,7 @@ p {
   transition: 500ms;
   border: none;
   outline: none;
+  font-size: 1.6rem;
 }
 .footer_container .footer .right_footer button:hover {
   color: #fae8c8;
@@ -344,6 +349,7 @@ p {
   transition: 500ms;
   border: none;
   outline: none;
+  font-size: 1.6rem;
 }
 .body_container .hero .hero_content a button:hover {
   color: #fae8c8;
@@ -387,7 +393,7 @@ p {
   text-align: center;
 }
 .body_container .horizontal .horizontal_content h3 {
-  line-height: 2;
+  color: #fda77f;
 }
 .body_container .horizontal .horizontal_content figure {
   height: 200px;
