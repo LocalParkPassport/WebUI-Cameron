@@ -6,3 +6,18 @@
 	justify-content: @j-content;
 	align-items: @a-items;
 }
+
+// Button Style
+.button() {
+    padding: 20px;
+    // border-radius: 1rem;
+    color: @darkGreen;
+    background: @lightPeach;
+    transition: 500ms;
+    border: none;
+    outline: none;
+    &:hover {
+        color: @lightPeach;
+        background: @darkGreen;
+    }
+}

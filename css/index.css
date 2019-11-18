@@ -168,25 +168,50 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background: #fae8c8;
 }
 .header_container .navigation .nav_left {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 30%;
+}
+.header_container .navigation .nav_left a button {
+  padding: 20px;
+  color: #445c3c;
+  background: #fae8c8;
+  transition: 500ms;
+  border: none;
+  outline: none;
+}
+.header_container .navigation .nav_left a button:hover {
+  color: #fae8c8;
+  background: #445c3c;
 }
 .header_container .navigation .nav_center {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 40%;
 }
 .header_container .navigation .nav_right {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 30%;
+}
+.header_container .navigation .nav_right a button {
+  padding: 20px;
+  color: #445c3c;
+  background: #fae8c8;
+  transition: 500ms;
+  border: none;
+  outline: none;
+}
+.header_container .navigation .nav_right a button:hover {
+  color: #fae8c8;
+  background: #445c3c;
 }
