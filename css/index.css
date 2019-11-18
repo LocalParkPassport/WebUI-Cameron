@@ -184,21 +184,14 @@ p {
   background-color: #445c3c;
 }
 .container .to_top {
-  padding: 20px;
-  color: #c9d99e;
-  background: #fda77f;
-  transition: 500ms;
-  border: none;
-  outline: none;
-  font-size: 1.6rem;
+  background-image: url(../img/up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
   position: fixed;
   bottom: 20px;
   left: 20px;
-  border-radius: 1rem;
-}
-.container .to_top:hover {
-  color: #fda77f;
-  background: #c9d99e;
 }
 .header_container {
   width: 100%;
