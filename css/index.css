@@ -159,3 +159,34 @@ h4 {
 p {
   font-family: 'Roboto', sans-serif;
 }
+.header_container {
+  width: 100%;
+}
+.header_container .navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_container .navigation .nav_left {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.header_container .navigation .nav_center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.header_container .navigation .nav_right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
