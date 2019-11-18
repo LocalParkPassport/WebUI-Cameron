@@ -1,0 +1,32 @@
+.footer_container {
+    width: 100%;
+    background-color: @peach;
+
+    .footer {
+        .flex();
+
+        .left_footer {
+            width: 50%;
+            .flex(row wrap, flex-end, center);
+
+            .logo {
+                height: 100px;
+                width: 100%;
+                background-image: url(../img/logo.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+
+            }
+        }
+
+        .right_footer {
+            width: 50%;
+            .flex();
+
+            button {
+                .button(@lightPeach, @darkGreen);
+            }
+        }
+    }
+}
