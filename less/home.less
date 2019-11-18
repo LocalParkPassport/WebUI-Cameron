@@ -1,4 +1,5 @@
 .body_container {
+    background-color: @darkGreen;
     width: 100%;
     .flex();
 
@@ -9,6 +10,10 @@
         .hero_content {
             .flex(column wrap, center, center);
 
+            h1 {
+                color: @peach;
+            }
+
             a button {
                 .button();
             }
@@ -18,6 +23,8 @@
     .search {
         .flex();
         max-width: 1000px;
+        background: @lightPeach;
+        padding-bottom: 20px;
 
         h2 {
             width: 100%;
@@ -34,4 +41,24 @@
             width: 100%;
         }
     }
+    .horizontal {
+                width: 100%;
+                background-color: @lightPeach;
+                max-width: 1000px;
+                overflow: auto;
+                white-space: nowrap;
+        
+                .horizontal_content {
+                    width: 250px;
+                    height: 250px;
+                    display: inline-block;
+                    text-align: center;
+        
+                    figure {
+                        height: 200px;
+                        background-color: @lightGreen;
+                        
+                    }
+                }
+            }
 }
