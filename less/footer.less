@@ -15,14 +15,19 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-                
-
-            
+            @media @tablet {
+                width: 100%;
+                margin: 10px 0px;
+            }
         }
 
         .right_footer {
             width: 50%;
             .flex(row wrap, flex-end, center);
+            @media @tablet {
+                width: 100%;
+                justify-content: center;
+            }
 
             button {
                 .button(@darkGreen, @lightPeach);
