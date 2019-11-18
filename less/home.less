@@ -1,0 +1,69 @@
+.body_container {
+    background-color: @darkGreen;
+    width: 100%;
+    .flex();
+
+    .hero {
+        .flex();
+        .hero();
+
+        .hero_content {
+            .flex(column wrap, center, center);
+
+            h1 {
+                color: @peach;
+                
+            }
+
+            a button {
+                .button(@darkGreen, @lightPeach);
+            }
+
+        }
+    }
+    .search {
+        .flex();
+        max-width: 1000px;
+        background: @lightPeach;
+        padding-bottom: 20px;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        p {
+            padding: 10px 20px;
+            max-width: 600px;
+        }
+
+        form {
+            .flex();
+            width: 100%;
+        }
+    }
+    .horizontal {
+                width: 100%;
+                background-color: @darkGreen;
+                max-width: 1000px;
+                overflow: auto;
+                white-space: nowrap;
+        
+                .horizontal_content {
+                    width: 250px;
+                    height: 250px;
+                    display: inline-block;
+                    text-align: center;
+
+                    h3 {
+                        color: @peach;
+                    }
+        
+                    figure {
+                        height: 200px;
+                        background-color: @lightGreen;
+                        
+                    }
+                }
+            }
+}
