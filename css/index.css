@@ -554,3 +554,50 @@ p {
   width: 100%;
   height: 100%;
 }
+.about_container .about {
+  width: 100%;
+}
+.about_container .about_us {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .us {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .us .box {
+  width: 50%;
+  padding: 20px;
+}
+.about_container .about_us .us .img {
+  width: 50%;
+  height: 90%;
+}
+.about_container .about_us .cameron {
+  background-color: #fae8c8;
+}
+.about_container .about_us .sierra {
+  flex-direction: row-reverse;
+  background-color: #c9d99e;
+}
+.about_container .about_us .dante {
+  background-color: #fda77f;
+}
+.about_container .about_us .suffyan {
+  flex-direction: row-reverse;
+  background-color: #fae8c8;
+}
+.about_container .about_us .preston {
+  background-color: #c9d99e;
+}
+.about_container .about_us .modurotolu {
+  flex-direction: row-reverse;
+  background-color: #fda77f;
+}
