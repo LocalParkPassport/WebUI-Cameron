@@ -15,9 +15,9 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            margin: 10px 0px;
             @media @tablet {
                 width: 100%;
-                margin: 10px 0px;
             }
         }
 
@@ -27,10 +27,14 @@
             @media @tablet {
                 width: 100%;
                 justify-content: center;
+                background-color: @darkGreen;
             }
 
             button {
                 .button(@darkGreen, @lightPeach);
+                @media @tablet {
+                    .button(@lightPeach, @darkGreen);
+                }
             }
         }
     }

@@ -12,13 +12,52 @@
 
             h1 {
                 color: @peach;
+                font-weight: 800;
                 
             }
 
             a button {
                 .button(@darkGreen, @lightPeach);
+                box-shadow: 1px 1px 0px @darkGreen,
+                2px 2px 0px @darkGreen,
+                3px 3px 0px @darkGreen,
+                4px 4px 0px @darkGreen,
+                5px 5px 0px @darkGreen,
+                6px 6px 0px @darkGreen;
+                &:hover {
+                    box-shadow: 1px 1px 0px @lightPeach,
+                2px 2px 0px @lightPeach,
+                3px 3px 0px @lightPeach,
+                4px 4px 0px @lightPeach,
+                5px 5px 0px @lightPeach,
+                6px 6px 0px @lightPeach;
+                }
             }
 
+        }
+    }
+    .hero_two {
+        .hero();
+
+        .hero_two_content {
+            max-width: 550px;
+            width: 50%;
+            background-color: rgba(255, 254, 254, 0.877);
+            border-radius: 2rem;
+            padding: 10px;
+            @media @tablet {
+                width: 75%;
+            }
+            @media @mobile {
+                width: 90%;
+            }
+            h2, h3 {
+                color: @darkGreen;
+                text-align: center
+            }
+            h3 {
+                font-style: italic;
+            }
         }
     }
     .search {
@@ -40,6 +79,10 @@
         form {
             .flex();
             width: 100%;
+
+            input[type=text] {
+                .search();
+            }
         }
     }
     .horizontal {
@@ -48,6 +91,7 @@
                 max-width: 1000px;
                 overflow: auto;
                 white-space: nowrap;
+                margin: 0 5%;
         
                 .horizontal_content {
                     width: 250px;
@@ -57,12 +101,17 @@
 
                     h3 {
                         color: @peach;
+                        width: 90%;
                     }
         
-                    figure {
-                        height: 200px;
-                        background-color: @lightGreen;
-                        
+                    .img_container {
+                        height: 80%;
+                        width: 90%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                 }
             }
