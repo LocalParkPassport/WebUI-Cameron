@@ -12,11 +12,14 @@
 
             h1 {
                 color: @peach;
+                text-shadow: 2px 2px @lightPeach;
+                font-weight: 800;
                 
             }
 
             a button {
                 .button(@darkGreen, @lightPeach);
+                
             }
 
         }
@@ -40,6 +43,10 @@
         form {
             .flex();
             width: 100%;
+
+            input[type=text] {
+                .search();
+            }
         }
     }
     .horizontal {
