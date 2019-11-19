@@ -226,6 +226,7 @@ p {
   .header_container .navigation .nav_left {
     width: 100%;
     justify-content: center;
+    background-color: #445c3c;
   }
 }
 .header_container .navigation .nav_left a button {
@@ -240,6 +241,21 @@ p {
 .header_container .navigation .nav_left a button:hover {
   color: #fae8c8;
   background: #445c3c;
+}
+@media (max-width: 500px) {
+  .header_container .navigation .nav_left a button {
+    padding: 20px;
+    color: #fae8c8;
+    background: #445c3c;
+    transition: 500ms;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+  }
+  .header_container .navigation .nav_left a button:hover {
+    color: #445c3c;
+    background: #fae8c8;
+  }
 }
 .header_container .navigation .nav_center {
   display: flex;
@@ -334,6 +350,7 @@ p {
   .footer_container .footer .right_footer {
     width: 100%;
     justify-content: center;
+    background-color: #445c3c;
   }
 }
 .footer_container .footer .right_footer button {
@@ -348,6 +365,21 @@ p {
 .footer_container .footer .right_footer button:hover {
   color: #fae8c8;
   background: #445c3c;
+}
+@media (max-width: 800px) {
+  .footer_container .footer .right_footer button {
+    padding: 20px;
+    color: #fae8c8;
+    background: #445c3c;
+    transition: 500ms;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+  }
+  .footer_container .footer .right_footer button:hover {
+    color: #445c3c;
+    background: #fae8c8;
+  }
 }
 .body_container {
   background-color: #445c3c;

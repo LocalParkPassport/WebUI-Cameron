@@ -18,10 +18,14 @@
             @media @mobile {
                 width: 100%;
                 justify-content: center;
+                background-color: @darkGreen;
             }
 
             a button {
                 .button(@darkGreen, @lightPeach);
+                @media @mobile {
+                    .button(@lightPeach, @darkGreen);
+                }
             }
         }
         .nav_center {

@@ -27,10 +27,14 @@
             @media @tablet {
                 width: 100%;
                 justify-content: center;
+                background-color: @darkGreen;
             }
 
             button {
                 .button(@darkGreen, @lightPeach);
+                @media @tablet {
+                    .button(@lightPeach, @darkGreen);
+                }
             }
         }
     }
