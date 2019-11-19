@@ -532,6 +532,7 @@ p {
   max-width: 1000px;
   overflow: auto;
   white-space: nowrap;
+  margin: 0 5%;
 }
 .body_container .horizontal .horizontal_content {
   width: 250px;
@@ -541,8 +542,13 @@ p {
 }
 .body_container .horizontal .horizontal_content h3 {
   color: #fda77f;
+  width: 90%;
 }
-.body_container .horizontal .horizontal_content figure {
-  height: 200px;
-  background-color: #c9d99e;
+.body_container .horizontal .horizontal_content .img_container {
+  height: 80%;
+  width: 90%;
+}
+.body_container .horizontal .horizontal_content .img_container img {
+  width: 100%;
+  height: 100%;
 }
