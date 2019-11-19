@@ -319,11 +319,11 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 10px 0px;
 }
 @media (max-width: 800px) {
   .footer_container .footer .left_footer {
     width: 100%;
-    margin: 10px 0px;
   }
 }
 .footer_container .footer .right_footer {
@@ -397,7 +397,6 @@ p {
 }
 .body_container .hero .hero_content h1 {
   color: #fda77f;
-  text-shadow: 2px 2px #fae8c8;
   font-weight: 800;
 }
 .body_container .hero .hero_content a button {
@@ -408,10 +407,79 @@ p {
   border: none;
   outline: none;
   font-size: 1.6rem;
+  box-shadow: 1px 1px 0px #445c3c, 2px 2px 0px #445c3c, 3px 3px 0px #445c3c, 4px 4px 0px #445c3c, 5px 5px 0px #445c3c, 6px 6px 0px #445c3c;
 }
 .body_container .hero .hero_content a button:hover {
   color: #fae8c8;
   background: #445c3c;
+}
+.body_container .hero .hero_content a button:hover {
+  box-shadow: 1px 1px 0px #fae8c8, 2px 2px 0px #fae8c8, 3px 3px 0px #fae8c8, 4px 4px 0px #fae8c8, 5px 5px 0px #fae8c8, 6px 6px 0px #fae8c8;
+}
+.body_container .hero_two {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../img/park.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.body_container .hero_two .hero_content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.body_container .hero_two .hero_content h1 {
+  color: #fda77f;
+  font-weight: 800;
+}
+.body_container .hero_two .hero_content a button {
+  padding: 20px;
+  color: #445c3c;
+  background: #fae8c8;
+  transition: 500ms;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px 0px #445c3c, 2px 2px 0px #445c3c, 3px 3px 0px #445c3c, 4px 4px 0px #445c3c, 5px 5px 0px #445c3c, 6px 6px 0px #445c3c;
+}
+.body_container .hero_two .hero_content a button:hover {
+  color: #fae8c8;
+  background: #445c3c;
+}
+.body_container .hero_two .hero_content a button:hover {
+  box-shadow: 1px 1px 0px #fae8c8, 2px 2px 0px #fae8c8, 3px 3px 0px #fae8c8, 4px 4px 0px #fae8c8, 5px 5px 0px #fae8c8, 6px 6px 0px #fae8c8;
+}
+.body_container .hero_two .hero_two_content {
+  max-width: 550px;
+  width: 50%;
+  background-color: rgba(255, 254, 254, 0.877);
+  border-radius: 2rem;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .body_container .hero_two .hero_two_content {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .body_container .hero_two .hero_two_content {
+    width: 90%;
+  }
+}
+.body_container .hero_two .hero_two_content h2,
+.body_container .hero_two .hero_two_content h3 {
+  color: #445c3c;
+  text-align: center;
+}
+.body_container .hero_two .hero_two_content h3 {
+  font-style: italic;
 }
 .body_container .search {
   display: flex;
@@ -439,6 +507,7 @@ p {
 }
 .body_container .search form input[type=text] {
   width: 30%;
+  outline: none;
   border: 2px solid #fda77f;
   border-radius: 4px;
   font-size: 1.6rem;
