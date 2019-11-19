@@ -581,7 +581,6 @@ p {
   .about_container .about_us .us {
     text-align: center;
     height: 400px;
-    border-top: solid black 2px;
   }
 }
 .about_container .about_us .us .box {
@@ -607,7 +606,6 @@ p {
 }
 .about_container .about_us .us .img {
   width: 50%;
-  background-color: white;
   height: 100%;
 }
 @media (max-width: 500px) {
@@ -624,6 +622,16 @@ p {
     flex-direction: column-reverse;
   }
 }
+.about_container .about_us .cameron .cameron_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .cameron .cameron_img img {
+  height: 90%;
+  width: auto;
+}
 .about_container .about_us .sierra {
   flex-direction: row-reverse;
   background-color: #c9d99e;
@@ -633,6 +641,16 @@ p {
     flex-direction: column-reverse;
   }
 }
+.about_container .about_us .sierra .sierra_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .sierra .sierra_img img {
+  height: 90%;
+  width: auto;
+}
 .about_container .about_us .dante {
   background-color: #fda77f;
 }
@@ -640,6 +658,16 @@ p {
   .about_container .about_us .dante {
     flex-direction: column-reverse;
   }
+}
+.about_container .about_us .dante .dante_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .dante .dante_img img {
+  height: 90%;
+  width: auto;
 }
 .about_container .about_us .suffyan {
   flex-direction: row-reverse;
@@ -650,6 +678,16 @@ p {
     flex-direction: column-reverse;
   }
 }
+.about_container .about_us .suffyan .suffyan_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .suffyan .suffyan_img img {
+  height: 90%;
+  width: auto;
+}
 .about_container .about_us .preston {
   background-color: #c9d99e;
 }
@@ -657,6 +695,16 @@ p {
   .about_container .about_us .preston {
     flex-direction: column-reverse;
   }
+}
+.about_container .about_us .preston .preston_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .preston .preston_img img {
+  height: 90%;
+  width: auto;
 }
 .about_container .about_us .modurotolu {
   flex-direction: row-reverse;
@@ -666,4 +714,14 @@ p {
   .about_container .about_us .modurotolu {
     flex-direction: column-reverse;
   }
+}
+.about_container .about_us .modurotolu .modurotolu_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about_container .about_us .modurotolu .modurotolu_img img {
+  height: 90%;
+  width: auto;
 }
