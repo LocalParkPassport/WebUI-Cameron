@@ -398,6 +398,7 @@ p {
 .body_container .hero .hero_content h1 {
   color: #fda77f;
   font-weight: 800;
+  text-align: center;
 }
 .body_container .hero .hero_content a button {
   padding: 20px;
@@ -438,6 +439,7 @@ p {
 .body_container .hero_two .hero_content h1 {
   color: #fda77f;
   font-weight: 800;
+  text-align: center;
 }
 .body_container .hero_two .hero_content a button {
   padding: 20px;
