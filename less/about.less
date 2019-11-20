@@ -1,148 +1,34 @@
 .about_container {
-
     .about {
-        width: 100%;
+        text-align: center;
+        .flex(column wrap, center, center);
+        
+        p {
+            width: 60%;
+        }
+
     }
-    .about_us {
-        .flex();
+    .team {
 
-        .us {
+        .box {
             width: 100%;
-            max-width: 1000px;
-            height: 300px;
-            .flex(row wrap, center, flex-start);
-            @media @tablet {
-                height: 350px;
-            }
-            @media @mobile {
+            .flex();
+
+            .left_box {
+                width: 50%;
                 text-align: center;
-                height: 400px;
-                
-            }
-
-            .box {
-                width: 50%;
                 padding: 20px;
-                @media @mobile {
-                    width: 100%;
-                    height: 50%;
-                    padding: 10px;
-                    
-                }
 
-                h2 {
-                    line-height: 1.5;
-                    font-size: 3.5rem;
-                    @media @mobile {
-                        line-height: 1;
-                        font-size: 3rem;
-                    }
-                }
             }
-            .img {
+            .right_box {
                 width: 50%;
-                height: 100%;
-                @media @mobile {
-                    width: 100%;
-                    height: 50%;
-                    
-                }
-            }
-        }
-        .cameron {
-            background-color: @lightPeach;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .cameron_img {
-                .flex();
-
-                img{
-                    height: 90%;
-                    width: auto;
-                }
-                
-            }
-            
-        }
-        .sierra {
-            flex-direction: row-reverse;
-            background-color: @lightGreen;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .sierra_img {
                 .flex();
 
                 img {
-                    height: 90%;
+                    height: 200px;
                     width: auto;
                 }
             }
         }
-        .dante {
-            background-color: @peach;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .dante_img {
-                .flex();
-
-                img {
-                    height: 90%;
-                    width: auto;
-                }
-            }
-        }
-        .suffyan {
-            flex-direction: row-reverse;
-            background-color: @lightPeach;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .suffyan_img {
-                .flex();
-
-                img {
-                    height: 90%;
-                    width: auto;
-                }
-            }
-        }
-        .preston {
-            background-color: @lightGreen;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .preston_img {
-                .flex();
-
-                img {
-                    height: 90%;
-                    width: auto;
-                }
-            }
-        }
-        .modurotolu {
-            flex-direction: row-reverse;
-            background-color: @peach;
-            @media @mobile {
-                flex-direction: column-reverse;
-            }
-
-            .modurotolu_img {
-                .flex();
-                img {
-                    height: 90%;
-                    width: auto;
-                }
-            }
-        }
-
     }
 }

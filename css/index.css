@@ -555,173 +555,35 @@ p {
   height: 100%;
 }
 .about_container .about {
-  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
-.about_container .about_us {
+.about_container .about p {
+  width: 60%;
+}
+.about_container .team .box {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-.about_container .about_us .us {
-  width: 100%;
-  max-width: 1000px;
-  height: 300px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-@media (max-width: 800px) {
-  .about_container .about_us .us {
-    height: 350px;
-  }
-}
-@media (max-width: 500px) {
-  .about_container .about_us .us {
-    text-align: center;
-    height: 400px;
-  }
-}
-.about_container .about_us .us .box {
+.about_container .team .box .left_box {
   width: 50%;
+  text-align: center;
   padding: 20px;
 }
-@media (max-width: 500px) {
-  .about_container .about_us .us .box {
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-  }
-}
-.about_container .about_us .us .box h2 {
-  line-height: 1.5;
-  font-size: 3.5rem;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .us .box h2 {
-    line-height: 1;
-    font-size: 3rem;
-  }
-}
-.about_container .about_us .us .img {
+.about_container .team .box .right_box {
   width: 50%;
-  height: 100%;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .us .img {
-    width: 100%;
-    height: 50%;
-  }
-}
-.about_container .about_us .cameron {
-  background-color: #fae8c8;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .cameron {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .cameron .cameron_img {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-.about_container .about_us .cameron .cameron_img img {
-  height: 90%;
-  width: auto;
-}
-.about_container .about_us .sierra {
-  flex-direction: row-reverse;
-  background-color: #c9d99e;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .sierra {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .sierra .sierra_img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.about_container .about_us .sierra .sierra_img img {
-  height: 90%;
-  width: auto;
-}
-.about_container .about_us .dante {
-  background-color: #fda77f;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .dante {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .dante .dante_img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.about_container .about_us .dante .dante_img img {
-  height: 90%;
-  width: auto;
-}
-.about_container .about_us .suffyan {
-  flex-direction: row-reverse;
-  background-color: #fae8c8;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .suffyan {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .suffyan .suffyan_img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.about_container .about_us .suffyan .suffyan_img img {
-  height: 90%;
-  width: auto;
-}
-.about_container .about_us .preston {
-  background-color: #c9d99e;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .preston {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .preston .preston_img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.about_container .about_us .preston .preston_img img {
-  height: 90%;
-  width: auto;
-}
-.about_container .about_us .modurotolu {
-  flex-direction: row-reverse;
-  background-color: #fda77f;
-}
-@media (max-width: 500px) {
-  .about_container .about_us .modurotolu {
-    flex-direction: column-reverse;
-  }
-}
-.about_container .about_us .modurotolu .modurotolu_img {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.about_container .about_us .modurotolu .modurotolu_img img {
-  height: 90%;
+.about_container .team .box .right_box img {
+  height: 200px;
   width: auto;
 }
