@@ -6,31 +6,37 @@
     .hero {
         .flex();
         .hero();
+        
 
         .hero_content {
             .flex(column wrap, center, center);
+            width: 100%;
 
             h1 {
                 color: @peach;
                 font-weight: 800;
-                
+                text-align: center;
             }
 
             a button {
                 .button(@darkGreen, @lightPeach);
+                padding: 20px 60px;
                 box-shadow: 1px 1px 0px @darkGreen,
-                2px 2px 0px @darkGreen,
-                3px 3px 0px @darkGreen,
-                4px 4px 0px @darkGreen,
-                5px 5px 0px @darkGreen,
+                -6px 6px 0px @darkGreen,
+                6px -6px 0px @darkGreen,
+                6px 6px 0px @darkGreen,
+                -6px -6px 0px @darkGreen,
                 6px 6px 0px @darkGreen;
                 &:hover {
-                    box-shadow: 1px 1px 0px @lightPeach,
-                2px 2px 0px @lightPeach,
-                3px 3px 0px @lightPeach,
-                4px 4px 0px @lightPeach,
-                5px 5px 0px @lightPeach,
+                    box-shadow: 1px 1px 0px @peach,
+                -6px 6px 0px @lightPeach,
+                6px -6px 0px @lightPeach,
+                6px 6px 0px @lightPeach,
+                -6px -6px 0px @lightPeach,
                 6px 6px 0px @lightPeach;
+                }
+                &:hover {
+                    padding: 30px 100px;
                 }
             }
 
@@ -51,11 +57,11 @@
             @media @mobile {
                 width: 90%;
             }
-            h2, h3 {
+            h2, h4 {
                 color: @darkGreen;
                 text-align: center
             }
-            h3 {
+            h4 {
                 font-style: italic;
             }
         }
@@ -99,7 +105,7 @@
                     display: inline-block;
                     text-align: center;
 
-                    h3 {
+                    h4 {
                         color: @peach;
                         width: 90%;
                     }
