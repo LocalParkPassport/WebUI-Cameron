@@ -16,6 +16,11 @@
                 color: @peach;
                 font-weight: 800;
                 text-align: center;
+                @media @mobile {
+                    font-size: 5rem;
+                    line-height: 1;
+                    margin-bottom: 20px;
+                }
             }
 
             a button {
@@ -59,8 +64,15 @@
             }
             h2, h4 {
                 color: @darkGreen;
-                text-align: center
+                text-align: center;
+                font-weight: bold;
             }
+            h2 {
+                @media @mobile {
+                    font-size: 3rem;
+                }
+            }
+
             h4 {
                 font-style: italic;
             }
@@ -75,6 +87,11 @@
         h2 {
             width: 100%;
             text-align: center;
+            font-weight: bold;
+            @media @mobile {
+                line-height: 1.5;
+                font-size: 3rem;
+            }
         }
 
         p {
@@ -88,6 +105,12 @@
 
             input[type=text] {
                 .search();
+                @media @mobile {
+                    width: 70%;
+                    &:focus {
+                        width: 90%;
+                    }
+                }
             }
         }
     }

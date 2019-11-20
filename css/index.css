@@ -207,7 +207,7 @@ p {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
+  width: 40%;
 }
 @media (max-width: 800px) {
   .header_container .navigation .nav_left {
@@ -260,7 +260,7 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
+  padding: 25px;
 }
 @media (max-width: 800px) {
   .header_container .navigation .nav_center {
@@ -301,6 +301,9 @@ p {
 .header_container .navigation .nav_right a button:hover {
   color: #fae8c8;
   background: #445c3c;
+}
+.header_container .navigation .nav_right a #sign_up:hover {
+  background-color: #fda77f;
 }
 .footer_container {
   width: 100%;
@@ -407,6 +410,13 @@ p {
   font-weight: 800;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .body_container .hero .hero_content h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
 .body_container .hero .hero_content a button {
   padding: 20px;
   color: #445c3c;
@@ -453,6 +463,13 @@ p {
   font-weight: 800;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .body_container .hero_two .hero_content h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
 .body_container .hero_two .hero_content a button {
   padding: 20px;
   color: #445c3c;
@@ -495,6 +512,12 @@ p {
 .body_container .hero_two .hero_two_content h4 {
   color: #445c3c;
   text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .body_container .hero_two .hero_two_content h2 {
+    font-size: 3rem;
+  }
 }
 .body_container .hero_two .hero_two_content h4 {
   font-style: italic;
@@ -511,6 +534,13 @@ p {
 .body_container .search h2 {
   width: 100%;
   text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .body_container .search h2 {
+    line-height: 1.5;
+    font-size: 3rem;
+  }
 }
 .body_container .search p {
   padding: 10px 20px;
@@ -543,6 +573,14 @@ p {
 }
 .body_container .search form input[type=text]:focus {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .body_container .search form input[type=text] {
+    width: 70%;
+  }
+  .body_container .search form input[type=text]:focus {
+    width: 90%;
+  }
 }
 .body_container .horizontal {
   width: 100%;
@@ -625,6 +663,11 @@ p {
 }
 .about_container .team .box .left_box h2 {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .about_container .team .box .left_box h2 {
+    line-height: 1.5;
+  }
 }
 .about_container .team .box .left_box h3 {
   font-style: italic;
