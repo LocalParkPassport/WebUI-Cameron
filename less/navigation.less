@@ -10,11 +10,13 @@
 
         .nav_left {
             .flex(row wrap, flex-start, center);
-            width: 30%;
+            width: 40%;
+
             @media @tablet {
                 width: 50%;
                 justify-content: flex-end;
             }
+
             @media @mobile {
                 width: 100%;
                 justify-content: center;
@@ -27,6 +29,7 @@
                     .button(@lightPeach, @darkGreen);
                 }
             }
+            
         }
         .nav_center {
             .flex();
@@ -35,7 +38,8 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            padding: 20px;
+            padding: 25px;
+
             @media @tablet {
                 margin: 10px 0px;
                 padding: 30px;
@@ -47,10 +51,12 @@
         .nav_right {
             .flex(row wrap, flex-end, center);
             width: 30%;
+
             @media @tablet {
                 width: 50%;
                 justify-content: flex-start;
             }
+
             @media @mobile {
                 width: 100%;
                 justify-content: center;
@@ -58,6 +64,12 @@
 
             a button {
                 .button(@darkGreen, @lightPeach);
+            }
+            
+            a #sign_up {
+                &:hover {
+                    background-color: @peach;
+                }
             }
         }
     }
