@@ -25,23 +25,30 @@
 
 // Hero Button
 
-.hero_button {
-    padding: 20px 60px;
-    border: solid @peach 3px;
-    box-shadow: 1px 1px 0px @darkGreen,
-    -6px 6px 0px @darkGreen,
-    6px -6px 0px @darkGreen,
-    6px 6px 0px @darkGreen,
-    -6px -6px 0px @darkGreen,
-    6px 6px 0px @darkGreen;
+.hero_button(@backGround) {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    min-width: 150px;
+    border-radius: 2rem;
+    background: @backGround;
+    transition: 500ms;
+    outline: none;
+    border: solid white 2px;
+    box-shadow: 3px 3px 3px white,
+    -3px 3px 3px white,
+    3px -3px 3px white,
+    -3px -3px 3px white;
+    
+    
     &:hover {
-        box-shadow: 1px 1px 0px @lightPeach,
-        -6px 6px 0px @lightPeach,
-        6px -6px 0px @lightPeach,
-        6px 6px 0px @lightPeach,
-        -6px -6px 0px @lightPeach,
-        6px 6px 0px @lightPeach;
-        padding: 30px 100px;
+        background: lighten(@backGround, 20%);
+        margin: 10px;
+        box-shadow: 5px 5px 5px @lightGreen,
+    -5px 5px 5px @lightGreen,
+    5px -5px 5px @lightGreen,
+    -5px -5px 5px @lightGreen;
+        
     }
 }
 
@@ -50,6 +57,7 @@
 .hero() {
     width: 100%;
     height: 40vh;
+    min-height: 300px;
     background-image: url(../img/park.jpg);
     background-size: cover;
     background-position: top;
@@ -63,7 +71,7 @@
     width: 30%;
     outline: none;
     border: 2px solid @peach;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1.6rem;
     background-color: white;
     background-image: url('../img/search.png');
@@ -71,8 +79,8 @@
     background-position: 2% 50%; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
     .shadow(@peach);
     &:focus {
         width: 50%;
