@@ -1,12 +1,3 @@
-.hero_button {
-  padding: 20px 60px;
-  border: solid #fda77f 3px;
-  box-shadow: 1px 1px 0px #445c3c, -6px 6px 0px #445c3c, 6px -6px 0px #445c3c, 6px 6px 0px #445c3c, -6px -6px 0px #445c3c, 6px 6px 0px #445c3c;
-}
-.hero_button:hover {
-  box-shadow: 1px 1px 0px #fae8c8, -6px 6px 0px #fae8c8, 6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8, -6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8;
-  padding: 30px 100px;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -216,7 +207,7 @@ p {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  width: 30%;
 }
 @media (max-width: 800px) {
   .header_container .navigation .nav_left {
@@ -265,7 +256,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 30%;
-  background-image: url(../img/logo.png);
+  background-image: url(../img/icon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -336,11 +327,12 @@ p {
   background-image: url(../img/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   margin: 10px 0px;
 }
 @media (max-width: 800px) {
   .footer_container .footer .left_footer {
+    background-position: center;
     width: 100%;
   }
 }
@@ -348,43 +340,20 @@ p {
   width: 50%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width: 800px) {
   .footer_container .footer .right_footer {
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #445c3c;
   }
 }
-.footer_container .footer .right_footer button {
-  padding: 20px;
-  color: #445c3c;
-  background: #fae8c8;
-  transition: 500ms;
-  border: none;
-  outline: none;
-  font-size: 1.6rem;
-}
-.footer_container .footer .right_footer button:hover {
-  color: #fae8c8;
-  background: #445c3c;
-}
-@media (max-width: 800px) {
-  .footer_container .footer .right_footer button {
-    padding: 20px;
-    color: #fae8c8;
-    background: #445c3c;
-    transition: 500ms;
-    border: none;
-    outline: none;
-    font-size: 1.6rem;
-  }
-  .footer_container .footer .right_footer button:hover {
-    color: #445c3c;
-    background: #fae8c8;
-  }
+.footer_container .footer .right_footer img {
+  margin: 5px 0;
+  height: 60px;
+  width: auto;
 }
 .body_container {
   background-color: #445c3c;
@@ -415,7 +384,8 @@ p {
   width: 100%;
 }
 .body_container .hero .hero_content h1 {
-  color: #fda77f;
+  color: white;
+  text-shadow: 3px 3px 2px #445c3c;
   font-weight: 800;
   text-align: center;
 }
@@ -426,25 +396,28 @@ p {
     margin-bottom: 20px;
   }
 }
-.body_container .hero .hero_content a button {
-  padding: 20px;
-  color: #445c3c;
-  background: #fae8c8;
+.body_container .hero .hero_content a {
+  text-decoration: none;
+}
+.body_container .hero .hero_content button {
+  padding: 10px;
+  width: 50%;
+  max-width: 300px;
+  min-width: 150px;
+  border-radius: 2rem;
+  background: #c9d99e;
   transition: 500ms;
-  border: none;
   outline: none;
-  font-size: 1.6rem;
-  padding: 20px 60px;
-  border: solid #fda77f 3px;
-  box-shadow: 1px 1px 0px #445c3c, -6px 6px 0px #445c3c, 6px -6px 0px #445c3c, 6px 6px 0px #445c3c, -6px -6px 0px #445c3c, 6px 6px 0px #445c3c;
+  border: solid white 2px;
+  box-shadow: 3px 3px 3px white, -3px 3px 3px white, 3px -3px 3px white, -3px -3px 3px white;
 }
-.body_container .hero .hero_content a button:hover {
-  color: #fae8c8;
-  background: #445c3c;
+.body_container .hero .hero_content button:hover {
+  background: #f2f6e7;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #c9d99e, -5px 5px 5px #c9d99e, 5px -5px 5px #c9d99e, -5px -5px 5px #c9d99e;
 }
-.body_container .hero .hero_content a button:hover {
-  box-shadow: 1px 1px 0px #fae8c8, -6px 6px 0px #fae8c8, 6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8, -6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8;
-  padding: 30px 100px;
+.body_container .hero .hero_content button img {
+  width: 70%;
 }
 .body_container .hero_two {
   display: flex;
@@ -467,7 +440,8 @@ p {
   width: 100%;
 }
 .body_container .hero_two .hero_content h1 {
-  color: #fda77f;
+  color: white;
+  text-shadow: 3px 3px 2px #445c3c;
   font-weight: 800;
   text-align: center;
 }
@@ -478,25 +452,28 @@ p {
     margin-bottom: 20px;
   }
 }
-.body_container .hero_two .hero_content a button {
-  padding: 20px;
-  color: #445c3c;
-  background: #fae8c8;
+.body_container .hero_two .hero_content a {
+  text-decoration: none;
+}
+.body_container .hero_two .hero_content button {
+  padding: 10px;
+  width: 50%;
+  max-width: 300px;
+  min-width: 150px;
+  border-radius: 2rem;
+  background: #c9d99e;
   transition: 500ms;
-  border: none;
   outline: none;
-  font-size: 1.6rem;
-  padding: 20px 60px;
-  border: solid #fda77f 3px;
-  box-shadow: 1px 1px 0px #445c3c, -6px 6px 0px #445c3c, 6px -6px 0px #445c3c, 6px 6px 0px #445c3c, -6px -6px 0px #445c3c, 6px 6px 0px #445c3c;
+  border: solid white 2px;
+  box-shadow: 3px 3px 3px white, -3px 3px 3px white, 3px -3px 3px white, -3px -3px 3px white;
 }
-.body_container .hero_two .hero_content a button:hover {
-  color: #fae8c8;
-  background: #445c3c;
+.body_container .hero_two .hero_content button:hover {
+  background: #f2f6e7;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #c9d99e, -5px 5px 5px #c9d99e, 5px -5px 5px #c9d99e, -5px -5px 5px #c9d99e;
 }
-.body_container .hero_two .hero_content a button:hover {
-  box-shadow: 1px 1px 0px #fae8c8, -6px 6px 0px #fae8c8, 6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8, -6px -6px 0px #fae8c8, 6px 6px 0px #fae8c8;
-  padding: 30px 100px;
+.body_container .hero_two .hero_content button img {
+  width: 70%;
 }
 .body_container .hero_two .hero_two_content {
   max-width: 550px;
@@ -564,7 +541,7 @@ p {
   width: 30%;
   outline: none;
   border: 2px solid #fda77f;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1.6rem;
   background-color: white;
   background-image: url('../img/search.png');
@@ -572,8 +549,8 @@ p {
   background-position: 2% 50%;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
   -webkit-box-shadow: 3px 3px 5px 6px #fda77f;
   -moz-box-shadow: 3px 3px 5px 6px #fda77f;
   box-shadow: 3px 3px 5px 6px #fda77f;

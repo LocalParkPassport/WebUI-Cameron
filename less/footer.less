@@ -14,30 +14,29 @@
             background-image: url(../img/logo.png);
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             margin: 10px 0px;
 
             @media @tablet {
+                background-position: center;
                 width: 100%;
             }
         }
 
         .right_footer {
             width: 50%;
-            .flex(row wrap, flex-end, center);
+            .flex(row wrap, space-evenly, center);
 
             @media @tablet {
                 width: 100%;
-                justify-content: center;
+                justify-content: space-around;
                 background-color: @darkGreen;
             }
 
-            button {
-                .button(@darkGreen, @lightPeach);
-                
-                @media @tablet {
-                    .button(@lightPeach, @darkGreen);
-                }
+            img {
+                margin: 5px 0;
+                height: 60px;
+                width: auto;
             }
         }
     }

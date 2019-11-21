@@ -12,7 +12,8 @@
             width: 100%;
 
             h1 {
-                color: @peach;
+                color: white;
+                text-shadow: 3px 3px 2px @darkGreen;
                 font-weight: 800;
                 text-align: center;
                 @media @mobile {
@@ -22,11 +23,18 @@
                 }
             }
 
-            a button {
-                .button(@darkGreen, @lightPeach);
-                .hero_button();
+            a {
+                text-decoration: none;
+                
             }
 
+            button {
+                .hero_button(@lightGreen);
+                
+                img {
+                    width: 70%;
+                }
+            }
         }
     }
     .hero_two {
