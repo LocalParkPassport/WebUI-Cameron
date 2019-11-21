@@ -330,10 +330,15 @@ p {
   background-position: left;
   margin: 10px 0px;
 }
+@media (max-width: 1200px) {
+  .footer_container .footer .left_footer {
+    background-position: right;
+  }
+}
 @media (max-width: 800px) {
   .footer_container .footer .left_footer {
-    background-position: center;
     width: 100%;
+    background-position: center;
   }
 }
 .footer_container .footer .right_footer {
