@@ -22,6 +22,7 @@
     .team {
         .flex();
         max-width: 1000px;
+
         .box {
             border-radius: 2rem;
             margin: 10px 0;
@@ -73,10 +74,10 @@
             .right_box {
                 width: 50%;
                 .flex();
+
                 @media @tablet {
                     width: 100%;
                 }
-
 
                 img {
                     height: 200px;
@@ -87,6 +88,7 @@
                 }
             }
         }
+
         .box:nth-child(odd) {
             flex-direction: row-reverse;
             background-color: @lightGreen;
@@ -95,6 +97,7 @@
                 
             }
         }
+        
         .box:nth-child(even) {
             background-color: @lightPeach;
             @media @tablet {
