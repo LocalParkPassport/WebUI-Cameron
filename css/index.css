@@ -673,14 +673,28 @@ p {
 }
 .about_container .team .box .left_box h2 {
   text-align: center;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .about_container .team .box .left_box h2 {
     line-height: 1.5;
+    font-size: 3rem;
   }
 }
 .about_container .team .box .left_box h3 {
+  text-align: center;
   font-style: italic;
+}
+@media (max-width: 500px) {
+  .about_container .team .box .left_box h3 {
+    font-size: 2.5rem;
+  }
+}
+.about_container .team .box .left_box a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #fda77f;
 }
 .about_container .team .box .left_box p {
   width: 90%;
@@ -703,6 +717,7 @@ p {
   width: auto;
   margin-top: 10px;
   border-radius: 50%;
+  box-shadow: 5px 5px 10px 2px #445c3c;
 }
 .about_container .team .box:nth-child(odd) {
   flex-direction: row-reverse;
