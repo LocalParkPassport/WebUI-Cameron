@@ -403,11 +403,11 @@ p {
   }
 }
 .body_container .hero .hero_content a {
-  text-decoration: none;
+  text-align: center;
 }
 .body_container .hero .hero_content button {
   padding: 10px;
-  width: 50%;
+  width: 80%;
   max-width: 300px;
   min-width: 150px;
   border-radius: 2rem;
@@ -460,11 +460,11 @@ p {
   }
 }
 .body_container .hero_two .hero_content a {
-  text-decoration: none;
+  text-align: center;
 }
 .body_container .hero_two .hero_content button {
   padding: 10px;
-  width: 50%;
+  width: 80%;
   max-width: 300px;
   min-width: 150px;
   border-radius: 2rem;
